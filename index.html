@@ -15,24 +15,28 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
     <header>
-        <nav>
-            <p class="fs-700">writings.dev</p>
+        <h1 class="fs-700">writings.dev</h1>
+      
+        <nav id="nav">
             <ul role="list" class="fs-600">
                 <li role="listitem"><a href="#">categories</a></li>
                 <li role="listitem"><a href="#">article</a></li>
                 <li role="listitem"><a href="#">about</a></li>
             </ul>
         </nav>
+        <button id="menu-btn">
+            <img src="./Public/Svg/List Icon.svg" alt="list icon"/>
+        </button>
     </header>
     <main>
         <section id="hero">
-            <img src="./Public/Svg/Logo.svg" alt="developer logo"/>
+            <img src="./Public/Svg/Logo.svg" id="logo" alt="developer logo"/>
             <h1 class="fs-900 text-accent italic">Writings for Developers</h1>
             <p class="fs-700">Curated collection of articles for busy developers</p>
         </section>
@@ -72,7 +76,7 @@
             </div>
             <div class="bloglist">
                 <article class=" flow">
-                    <img src="./Public/Images/image 1.png" alt="" width="100%">
+                    <img src="./Public/Images/image 1.png" alt="" width="100%" >
                     <h1>Understanding Docker and Containers</h1>
                     <p>
                         Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. 
